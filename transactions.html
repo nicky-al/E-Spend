@@ -6,14 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/E-Spend/css/style.css">
 </head>
 <body>
 
   <div class="login-container">
     <h1>Transaction History</h1>
 
-    <!-- Filters -->
     <select id="filterEnvelope">
       <option value="">All Envelopes</option>
     </select>
@@ -22,10 +21,8 @@
 
     <button id="clearFilters">Clear Filters</button>
 
-    <!-- Totals -->
     <div id="historyTotals" style="margin: 10px 0; font-weight: bold;"></div>
 
-    <!-- History List -->
     <div id="transactionsList"></div>
 
     <br>
@@ -34,7 +31,7 @@
     </button>
   </div>
 
-  <script src="transactions.js"></script>
+<script src="/E-Spend/js/transactions.js"></script>
 
 </body>
 </html>
