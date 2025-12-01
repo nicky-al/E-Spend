@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Envelopes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+
+    <script src ="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>My Envelopes</h1>
+        <input type="text" id="envelopeName" placeholder="Envelope Name (i.e., Groceries)">
+        <input type="number" id="envelopeBudget" placeholder="Monthly Budget ($)">
+        <input type="text" id="envelopeEmoji" placeholder="Emoji (optional :3)">
+<button id="addEnvelopeButton">Add Envelope</button>
+<p id="envelopeMessageBox"></p>
+<hr style ="margin: 20px 0;">
+        <div id="envelopesList">
+        </div>
+        <br>
+<button type="button" id="backToDashboard">Back to Dashboard</button>
+
+    </div>
+    <script src="envelopes.js"></script>
+    <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
