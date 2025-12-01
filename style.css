@@ -50,3 +50,32 @@ body{
     font-size:14px;
     color:#931c0f;
 }
+/*MOBILE FRIENDLY STYLES */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .login-container {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    border-radius: 0;
+  }
+
+  input, button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    border-radius: 8px;
+  }
+
+  #envelopesList div {
+    font-size: 16px;
+  }
+}
