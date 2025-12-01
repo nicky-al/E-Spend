@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Transaction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h1>Add Transaction</h1>
+
+    <input type="number" id="amountInput" placeholder="Amount ($)">
+
+    <select id="typeInput">
+      <option value="expense">Expense</option>
+      <option value="income">Income</option>
+    </select>
+
+    <select id="envelopeSelect">
+      <option value="">Select Envelope</option>
+    </select>
+
+    <input type="date" id="dateInput">
+
+    <input type="text" id="noteInput" placeholder="Note (optional)">
+
+    <button id="addTransactionButton">Save Transaction</button>
+
+    <p id="transactionMessageBox"></p>
+
+    <br>
+    <button onclick="window.location.href='dashboard.html'">
+      Back to Dashboard
+    </button>
+  </div>
+
+  <script src="add-transaction.js"></script>
+
+</body>
+</html>

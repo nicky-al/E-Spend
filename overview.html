@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spending Overview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>Monthly Overview</h1>
+    <p id="monthLabel"></p>
+<!-- MONTHLY SUMMARY CARDS -->
+<div class="overview-card">
+  <p>Total Income</p>
+  <h2 id="totalIncome">$0.00</h2>
+</div>
+
+<div class="overview-card">
+  <p>Total Spent</p>
+  <h2 id="totalSpent">$0.00</h2>
+</div>
+
+<div class="overview-card">
+  <p>Remaining Balance</p>
+  <h2 id="remainingBalance">$0.00</h2>
+</div>
+
+<div class="overview-card">
+  <p>Top Spending Envelope</p>
+  <h3 id="topCategory">None</h3>
+</div>
+
+    <div id="calendar" class="calendar-grid"></div>
+
+    <h3>Transactions on <span id="selectedDateLabel">–</span></h3>
+    <div id="dayTotals" class="day-totals"></div>
+    <div id="dayTransactions"></div>
+
+    <br />
+    <button type="button" id="backToDashboard">Back to Dashboard</button>
+  </div>
+
+  <script src="overview.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>

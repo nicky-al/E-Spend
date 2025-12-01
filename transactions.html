@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transaction History</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h1>Transaction History</h1>
+
+    <!-- Filters -->
+    <select id="filterEnvelope">
+      <option value="">All Envelopes</option>
+    </select>
+
+    <input type="month" id="filterMonth">
+
+    <button id="clearFilters">Clear Filters</button>
+
+    <!-- Totals -->
+    <div id="historyTotals" style="margin: 10px 0; font-weight: bold;"></div>
+
+    <!-- History List -->
+    <div id="transactionsList"></div>
+
+    <br>
+    <button onclick="window.location.href='dashboard.html'">
+      Back to Dashboard
+    </button>
+  </div>
+
+  <script src="transactions.js"></script>
+
+</body>
+</html>
