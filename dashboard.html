@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="manifest" href="manifest.json">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src ="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<body>
+ <div class="dashboard-buttons">
+
+  <button id="darkModeToggle">Toggle Dark Mode</button>
+
+  <button onclick="window.location.href='envelopes.html'">
+    Go to Envelopes
+  </button>
+
+  <button onclick="window.location.href='overview.html'">
+    Spending Overview
+  </button>
+
+  <button onclick="window.location.href='add-transaction.html'">
+    Add Transaction
+  </button>
+
+  <button onclick="window.location.href='transactions.html'">
+    View Transaction History
+  </button>
+
+  <button onclick="window.location.href='savings.html'">
+    Savings Goals
+  </button>
+
+</div>
+
+
+
+<div class="login-container">
+    <h1> Dashboard </h1>
+    <p id="welcomeMessage">Hello!</user></p>
+    <button id="logoutButton">Logout</button>
+    <div id="contentArea">
+    </div>
+<script src="js/dashboard.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+
+</body>
+</html>
