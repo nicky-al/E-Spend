@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="manifest" href="manifest.json" />
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div class="login-container">
     <h1>Monthly Overview</h1>
     <p id="monthLabel"></p>
-<!-- MONTHLY SUMMARY CARDS -->
 <div class="overview-card">
   <p>Total Income</p>
   <h2 id="totalIncome">$0.00</h2>
@@ -43,7 +42,7 @@
     <button type="button" id="backToDashboard">Back to Dashboard</button>
   </div>
 
-  <script src="overview.js"></script>
+<script src="js/overview.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
