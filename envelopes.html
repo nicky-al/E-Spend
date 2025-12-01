@@ -11,15 +11,62 @@
 </head>
 <body>
     <div class="login-container">
-        <h1>My Envelopes</h1>
-        <input type="text" id="envelopeName" placeholder="Envelope Name (i.e., Groceries)">
-        <input type="number" id="envelopeBudget" placeholder="Monthly Budget ($)">
-        <input type="text" id="envelopeEmoji" placeholder="Emoji (optional :3)">
+<h1>My Envelopes</h1>
+
+<input 
+  type="text" 
+  id="envelopeName" 
+  placeholder="Envelope Name (i.e., Groceries)"
+>
+
+<input 
+  type="number" 
+  id="envelopeBudget" 
+  placeholder="Monthly Budget ($)"
+>
+
+<input 
+  type="text" 
+  id="envelopeEmoji" 
+  placeholder="Emoji (optional :3)"
+>
+
+<label class="envelope-type-label">Envelope Type</label>
+<select id="envelopeType">
+  <option value="variable">Variable</option>
+  <option value="fixed">Fixed</option>
+  <option value="saving">Saving</option>
+</select>
+
+<div id="savingFields" style="display: none;">
+  <input 
+    type="number" 
+    id="savingGoalAmount" 
+    placeholder="Goal Amount ($)"
+  >
+
+  <label for="savingGoalDeadline">Goal Deadline</label>
+  <input 
+    type="date" 
+    id="savingGoalDeadline"
+  >
+</div>
+
 <button id="addEnvelopeButton">Add Envelope</button>
 <p id="envelopeMessageBox"></p>
+
 <hr style ="margin: 20px 0;">
         <div id="envelopesList">
-        </div>
+  <h2>Variable Envelopes</h2>
+  <div id="variableEnvelopes"></div>
+
+  <h2>Fixed Envelopes</h2>
+  <div id="fixedEnvelopes"></div>
+
+  <h2>Savings Envelopes</h2>
+  <div id="savingEnvelopes"></div>
+</div>
+
         <br>
 <button type="button" id="backToDashboard">Back to Dashboard</button>
 
