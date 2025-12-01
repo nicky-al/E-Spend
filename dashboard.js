@@ -7,7 +7,7 @@ const logoutButton = document.getElementById('logoutButton');
 async function loadUser() {
     const { data: { user } } = await supabase.auth.getUser();
     if (user) {
-        welcomeMessage.textContent = `Welcome, ${user.email}!`;
+        currentUserId = user.id;
     } else {
         window.location.href = 'index.html'; 
     }
