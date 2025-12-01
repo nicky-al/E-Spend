@@ -1,1 +1,227 @@
 
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg, #c7adf0, #dcc8ea);
+}
+.login-container{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 320px;
+    text-align: center;
+}
+.login-container h1{
+    margin-bottom: 20px;
+    color: #382662;
+
+}
+.login-container input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius: 10px;    
+    font-size:16px;
+}
+.login-container button{
+    width:100%;
+    padding:12px;
+    margin-top:12px;
+    border:none;
+    border-radius:10px;
+    background-color:#b1a4e0;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.login-container button:hover{
+    background-color:#9c8ed6;
+}
+#messageBox{
+    margin-top:10px;
+    font-size:14px;
+    color:#931c0f;
+}
+/* MOBILE FRIENDLY STYLES
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .login-container {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    border-radius: 0;
+  }
+
+  input, button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    border-radius: 8px;
+  }
+
+  #envelopesList div {
+    font-size: 16px;
+  } 
+}*/
+/* Envelopes page extras */
+.envelope-form {
+  margin-bottom: 20px;
+}
+
+.envelope-type-label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.saving-fields input {
+  margin-top: 6px;
+}
+
+.small-label {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #555;
+}
+
+.section-title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #6b3fb4;
+}
+
+.envelope-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.envelope-card {
+  background-color: #f6f1ff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  font-size: 14px;
+}
+
+.envelope-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.envelope-emoji {
+  font-size: 18px;
+}
+
+.envelope-name {
+  font-weight: bold;
+}
+
+.envelope-body {
+  font-size: 13px;
+}
+
+.envelope-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.envelope-deadline {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #777;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.calendar-cell {
+  background-color: #f6f1ff;
+  border-radius: 999px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 13px;
+}
+
+.calendar-empty {
+  background: transparent;
+  box-shadow: none;
+}
+
+.calendar-green {
+  background-color: #d8f5e4;
+}
+
+.calendar-red {
+  background-color: #ffd6d6;
+}
+
+.day-totals {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.transaction-row {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  margin-top: 4px;
+}
+body.dark-mode {
+  background: #121212;
+  color: #f2f2f2;
+}
+
+body.dark-mode .login-container {
+  background: #1e1e1e;
+  box-shadow: 0 0 12px rgba(255,255,255,0.1);
+}
+
+body.dark-mode button {
+  background: #7b5cff;
+  color: white;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #555;
+}
+.dashboard-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.dashboard-buttons button {
+  width: 100%;
+  margin-top: 0;
+}
