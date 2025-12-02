@@ -1,6 +1,8 @@
 Simple budgeting app that allows user to track spending and savings. Still has a long way to go.
 Code was altered from when I originally made it on VS Code to allow Github Pages to run the web app.
 
+![image](https://github.com/user-attachments/assets/ad51cf20-b93e-4f97-b45a-5835d375fa0b)
+
 ![image](https://github.com/user-attachments/assets/837db496-57fd-4083-9089-f2147468a082)
 ![image](https://github.com/user-attachments/assets/2d14c84c-e1db-4435-9e86-c2228f4090c1)
 ![image](https://github.com/user-attachments/assets/7d4179ec-e03d-4327-8187-0f47c4a2f0e6)
