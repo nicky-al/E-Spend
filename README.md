@@ -11,3 +11,5 @@ monthly overview
 add envelopes
 ![image](https://github.com/user-attachments/assets/93135c78-8428-40dc-995d-388dd82a5cbe)
 add transactions
+![image](https://github.com/user-attachments/assets/2adb7c67-c54c-472a-8724-335817cb0310)
+transaction history
