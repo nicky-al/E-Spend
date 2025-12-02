@@ -6,9 +6,9 @@ main screen
 ![image](https://github.com/user-attachments/assets/2d14c84c-e1db-4435-9e86-c2228f4090c1)
 dashboard
 ![image](https://github.com/user-attachments/assets/7d4179ec-e03d-4327-8187-0f47c4a2f0e6)
-monthly overview
+    monthly overview
 ![image](https://github.com/user-attachments/assets/132d868d-5602-40d4-9d68-d451ab355bc0)
-add envelopes
+    add envelopes
 ![image](https://github.com/user-attachments/assets/93135c78-8428-40dc-995d-388dd82a5cbe)
 add transactions
 ![image](https://github.com/user-attachments/assets/2adb7c67-c54c-472a-8724-335817cb0310)
